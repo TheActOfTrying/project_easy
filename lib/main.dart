@@ -508,7 +508,7 @@ class MyHomePage extends StatelessWidget {
         color: Colors.transparent,
         elevation: 0,
         padding: EdgeInsets.all(8),
-        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
           Text(
             'Version 1.0.4',
             style: TextStyle(color: Colors.grey),
@@ -592,7 +592,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             const Divider(
               thickness: 1,
-              color: Colors.black,
+              color: Colors.grey,
             ),
           ],
         );
