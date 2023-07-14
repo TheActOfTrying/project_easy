@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'theme_changer/model_theme.dart';
+import 'package:provider/provider.dart';
 
 import 'machine.dart';
 import 'home_page.dart';
 
 void main() {
-  Map<String, List<String>> machineCodes = {
+  final Map<String, List<String>> machineCodes = {
     "Hettemaskin og Underbenk": [
       "A1 - Want of water\nVannventil",
       "B1 - Drain not efficient\nTømmepumpe",
@@ -456,12 +458,33 @@ appears on temperature display.""",
       "rCLN: request for a cleaning cycle (manual or automatic);parameter FCLn is set to a value different from 0."
     ]
   };
-  runApp(MaterialApp(
-      title: "Project Easy",
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(
-          machines: List.generate(
-              machineCodes.length,
-              (index) => Machine(machineCodes.keys.elementAt(index),
-                  machineCodes[machineCodes.keys.elementAt(index)]!)))));
+  runApp(MyApp(machineCodes: machineCodes));
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key, required this.machineCodes});
+
+  final Map<String, List<String>> machineCodes;
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (_) => ModelTheme(),
+      child: Consumer<ModelTheme>(
+        builder: (context, ModelTheme themeNotifier, child) {
+          return MaterialApp(
+              title: "Project Easy",
+              debugShowCheckedModeBanner: false,
+              theme: themeNotifier.isDark
+                  ? ThemeData(brightness: Brightness.dark)
+                  : ThemeData(brightness: Brightness.light),
+              home: MyHomePage(
+                  machines: List.generate(
+                      machineCodes.length,
+                      (index) => Machine(machineCodes.keys.elementAt(index),
+                          machineCodes[machineCodes.keys.elementAt(index)]!))));
+        },
+      ),
+    );
+  }
 }
