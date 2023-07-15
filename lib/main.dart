@@ -242,7 +242,7 @@ void main() {
       "E894 - ACU8 Dryer 2, over-current on low voltage section"
     ],
     "Skyline": [
-      "ACUP - communication protocol between UI and ACU is not working",
+      "ACUP - communication protocol between UI and ACU is not working",
       "CLLP - Clean hood’s lamp",
       "CLCS - Clean hood's condensation sink",
       "CLFt - Clean hood's demister and water separator filter",
