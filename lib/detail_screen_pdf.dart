@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project_easy/info_map.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'pdf_screen.dart';
 import 'machine.dart';
 
@@ -33,7 +32,7 @@ class _DetailScreenPdfState extends State<DetailScreenPdf> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => PdfScreen(pdfFile: regulatorMap()[widget.machine.errorCodes[i]] ?? "ERROR - PDF not found"),
+                      builder: (context) => PdfScreen(machineName: regulatorMap().keys.elementAt(i), pdfFile: regulatorMap()[widget.machine.errorCodes[i]] ?? "ERROR - PDF not found"),
                     ));
               },
             ),

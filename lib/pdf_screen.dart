@@ -3,9 +3,10 @@ import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 /// Represents Homepage for Navigation
 class PdfScreen extends StatefulWidget {
+  final String machineName;
   final String pdfFile;
 
-  const PdfScreen({super.key, required this.pdfFile});
+  const PdfScreen({super.key, required this.pdfFile, required this.machineName});
 
   @override
   State<PdfScreen> createState() => _PdfScreenState();
@@ -16,13 +17,12 @@ class _PdfScreenState extends State<PdfScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Syncfusion Flutter PDF Viewer'),
+        title: Text(widget.machineName),
         backgroundColor: Colors.purple,
       ),
-      body: SfPdfViewer.asset(
-        widget.pdfFile
-        //"assets/my_document_0.pdf",
-      ),
+      body: SfPdfViewer.asset(widget.pdfFile
+          //"assets/my_document_0.pdf",
+          ),
     );
   }
 }
