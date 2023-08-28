@@ -463,6 +463,27 @@ appears on temperature display.""",
       "EL - Feil på beholderens kontrollbryter",
       "EP - Feil på innstilling av modellnummer",
       "EU - Feil på kontrollerkort"
-    ]
+    ],
+    //"Testmaskin": ["reg0", "reg1", "reg2"]
+    "Regulatorer": ["Carel ir33 manual", "Dixell Emerson XR manual", "Eliwell IDPlus manual"]
+  };
+}
+
+List<bool> isPdfList() {
+  return [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+  ];
+}
+
+Map<String, String> regulatorMap() {
+  return {
+    "Carel ir33 manual": "assets/carel_ir33_manual.pdf",
+    "Dixell Emerson XR manual": "assets/dixell_emerson_xr_manual.pdf",
+    "Eliwell IDPlus manual": "assets/eliwell_idplus_manual.pdf"
   };
 }

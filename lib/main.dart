@@ -8,13 +8,16 @@ import 'info_map.dart';
 
 void main() {
   final Map<String, List<String>> machineCodes = infoMap();
-  runApp(MyApp(machineCodes: machineCodes));
+  final List<bool> pdfBoolList = isPdfList();
+  runApp(MyApp(machineCodes: machineCodes, pdfBoolList: pdfBoolList));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key, required this.machineCodes});
+  const MyApp(
+      {super.key, required this.machineCodes, required this.pdfBoolList});
 
   final Map<String, List<String>> machineCodes;
+  final List<bool> pdfBoolList;
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +34,10 @@ class MyApp extends StatelessWidget {
               home: MyHomePage(
                   machines: List.generate(
                       machineCodes.length,
-                      (index) => Machine(machineCodes.keys.elementAt(index),
-                          machineCodes[machineCodes.keys.elementAt(index)]!))));
+                      (index) => Machine(
+                          machineCodes.keys.elementAt(index),
+                          machineCodes[machineCodes.keys.elementAt(index)]!,
+                          pdfBoolList[index]))));
         },
       ),
     );
