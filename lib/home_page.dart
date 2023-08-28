@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'theme_changer/model_theme.dart';
 import 'machine.dart';
 import 'detail_screen.dart';
+import 'detail_screen_pdf.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -48,7 +49,14 @@ class _HomePageState extends State<MyHomePage> {
                               fontSize: 20, fontWeight: FontWeight.w700),
                         ),
                         onTap: () {
-                          Navigator.push(
+                          widget.machines[index].isPdf
+                            ? Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailScreenPdf(
+                                    machine: widget.machines[index]),
+                              ))
+                              : Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => DetailScreen(
