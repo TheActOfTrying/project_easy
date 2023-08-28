@@ -464,12 +464,14 @@ appears on temperature display.""",
       "EP - Feil på innstilling av modellnummer",
       "EU - Feil på kontrollerkort"
     ],
-    "Testmaskin": ["Regulator0", "Regulator1", "Regulator2"]
+    //"Testmaskin": ["reg0", "reg1", "reg2"]
+    "Regulatorer": ["Carel ir33 manual", "Dixell Emerson XR manual", "Eliwell IDPlus manual"]
   };
 }
 
 List<bool> isPdfList() {
   return [
+    false,
     false,
     false,
     false,
@@ -480,8 +482,8 @@ List<bool> isPdfList() {
 
 Map<String, String> regulatorMap() {
   return {
-    "Regulator0": "assets/my_document_0.pdf",
-    "Regulator1": "assets/my_document_1.pdf",
-    "Regulator2": "assets/my_document_2.pdf"
+    "Carel ir33 manual": "assets/carel_ir33_manual.pdf",
+    "Dixell Emerson XR manual": "assets/dixell_emerson_xr_manual.pdf",
+    "Eliwell IDPlus manual": "assets/eliwell_idplus_manual.pdf"
   };
 }
