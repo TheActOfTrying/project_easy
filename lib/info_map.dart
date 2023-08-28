@@ -448,6 +448,25 @@ appears on temperature display.""",
       "dEt: low level of detergent.",
       "rAI: low level of rinser.",
       "rCLN: request for a cleaning cycle (manual or automatic);parameter FCLn is set to a value different from 0."
-    ]
+    ],
+    "Testmaskin": ["Regulator0", "Regulator1", "Regulator2"]
+  };
+}
+
+List<bool> isPdfList() {
+  return [
+    false,
+    false,
+    false,
+    false,
+    true
+  ];
+}
+
+Map<String, String> regulatorMap() {
+  return {
+    "Regulator0": "assets/my_document_0.pdf",
+    "Regulator1": "assets/my_document_1.pdf",
+    "Regulator2": "assets/my_document_2.pdf"
   };
 }
