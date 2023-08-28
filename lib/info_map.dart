@@ -449,6 +449,21 @@ appears on temperature display.""",
       "rAI: low level of rinser.",
       "rCLN: request for a cleaning cycle (manual or automatic);parameter FCLn is set to a value different from 0."
     ],
+    "Hoshizaki DCM": [
+      "E0 - Risiko for vannlekkasjer",
+      "E1 - Lav isproduksjon",
+      "E2 - Feil ved vannforsyningskretsen",
+      "E3 - Feil ved girmotor",
+      "E4 - Unormalt høyt sidetrykk. Rengjør luftfilteret",
+      "E5 - Feil på elektrisk krets",
+      "Eb - Feil på elektrisk krets",
+      "Ed - Kommunikasjonsfeil på driftspanelet",
+      "EE - Feil ved girmotor",
+      "EF - Nettspenningen er for lav",
+      "EL - Feil på beholderens kontrollbryter",
+      "EP - Feil på innstilling av modellnummer",
+      "EU - Feil på kontrollerkort"
+    ],
     "Testmaskin": ["Regulator0", "Regulator1", "Regulator2"]
   };
 }
