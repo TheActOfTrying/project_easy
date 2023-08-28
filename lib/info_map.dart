@@ -449,7 +449,7 @@ appears on temperature display.""",
       "rAI: low level of rinser.",
       "rCLN: request for a cleaning cycle (manual or automatic);parameter FCLn is set to a value different from 0."
     ],
-    "Hosizaki DCM": [
+    "Hoshizaki DCM": [
       "E0 - Risiko for vannlekkasjer",
       "E1 - Lav isproduksjon",
       "E2 - Feil ved vannforsyningskretsen",
