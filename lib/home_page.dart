@@ -22,21 +22,21 @@ class _HomePageState extends State<MyHomePage> {
       builder: (context, ModelTheme themeNotifier, child) {
         return Scaffold(
           appBar: AppBar(
-              title: const Text("Project Easy"),
-              backgroundColor: Colors.purple,
-              actions: [
-                IconButton(
-                  icon: Icon(themeNotifier.isDark
+            title: const Text("Project Easy"),
+            backgroundColor: Colors.purple,
+            actions: [
+              IconButton(
+                icon: Icon(themeNotifier.isDark
                     ? Icons.nightlight_round
                     : Icons.wb_sunny),
-                  onPressed: () {
-                    themeNotifier.isDark
+                onPressed: () {
+                  themeNotifier.isDark
                       ? themeNotifier.isDark = false
                       : themeNotifier.isDark = true;
-                  },
-                )
-              ],
-            ),
+                },
+              )
+            ],
+          ),
           body: ListView.builder(
               itemCount: widget.machines.length,
               itemBuilder: (context, index) {
@@ -50,18 +50,18 @@ class _HomePageState extends State<MyHomePage> {
                         ),
                         onTap: () {
                           widget.machines[index].isPdf
-                            ? Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DetailScreenPdf(
-                                    machine: widget.machines[index]),
-                              ))
+                              ? Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => DetailScreenPdf(
+                                        machine: widget.machines[index]),
+                                  ))
                               : Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DetailScreen(
-                                    machine: widget.machines[index]),
-                              ));
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => DetailScreen(
+                                        machine: widget.machines[index]),
+                                  ));
                         }),
                     const Divider(
                       thickness: 1,
@@ -76,7 +76,7 @@ class _HomePageState extends State<MyHomePage> {
             padding: EdgeInsets.all(8),
             child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
               Text(
-                'Version 1.0.4',
+                'Version 1.0.6',
                 style: TextStyle(color: Colors.grey),
               )
             ]),
