@@ -29,11 +29,25 @@ class _DetailScreenPdfState extends State<DetailScreenPdf> {
                 widget.machine.errorCodes[i],
               ),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PdfScreen(machineName: regulatorMap().keys.elementAt(i), pdfFile: regulatorMap()[widget.machine.errorCodes[i]] ?? "ERROR - PDF not found"),
-                    ));
+                (widget.machine.machineType == "Servicemanualer" )
+                    ? Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PdfScreen(
+                              machineName: serviceManualMap().keys.elementAt(i),
+                              pdfFile: serviceManualMap()[
+                                      widget.machine.errorCodes[i]] ??
+                                  "ERROR - PDF not found"),
+                        ))
+                    : Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PdfScreen(
+                              machineName: regulatorMap().keys.elementAt(i),
+                              pdfFile: regulatorMap()[
+                                      widget.machine.errorCodes[i]] ??
+                                  "ERROR - PDF not found"),
+                        ));
               },
             ),
             const Divider(
