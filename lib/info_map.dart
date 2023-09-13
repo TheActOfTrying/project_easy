@@ -465,18 +465,20 @@ appears on temperature display.""",
       "EU - Feil på kontrollerkort"
     ],
     //"Testmaskin": ["reg0", "reg1", "reg2"]
-    "Regulatorer": ["Carel ir33 manual", "Dixell Emerson XR manual", "Eliwell IDPlus manual"]
+    "Regulatorer": ["Carel ir33 manual", "Dixell Emerson XR manual", "Eliwell IDPlus manual"],
+    "Servicemanualer": ["Gram kgf", "Winterhalter UC", "Coffee Queen"]
   };
 }
 
-List<bool> isPdfList() {
+List <bool> isPdfList() {
   return [
     false,
     false,
     false,
     false,
     false,
-    true
+    true,
+    true,
   ];
 }
 
@@ -485,5 +487,13 @@ Map<String, String> regulatorMap() {
     "Carel ir33 manual": "assets/carel_ir33_manual.pdf",
     "Dixell Emerson XR manual": "assets/dixell_emerson_xr_manual.pdf",
     "Eliwell IDPlus manual": "assets/eliwell_idplus_manual.pdf"
+  };
+}
+
+Map<String, String> serviceManualMap() {
+  return {
+    "Gram kgf": "assets/gram_kgf_220_320_420.pdf",
+    "Winterhalter UC": "assets/winterhalter_uc.pdf",
+    "Coffee Queen": "assets/coffee_queen.pdf"
   };
 }
