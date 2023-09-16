@@ -23,7 +23,6 @@ class _HomePageState extends State<MyHomePage> {
         return Scaffold(
           appBar: AppBar(
             title: const Text("Project Easy"),
-            backgroundColor: Colors.purple,
             actions: [
               IconButton(
                 icon: Icon(themeNotifier.isDark

@@ -90,7 +90,6 @@ class _DetailScreenState extends State<DetailScreen> {
             title: !_searchBoolean
                 ? Text(widget.machine.machineType)
                 : _searchTextField(),
-            backgroundColor: Colors.purple,
             actions: !_searchBoolean
                 ? [
                     IconButton(

@@ -65,7 +65,6 @@ class _DetailScreenPdfState extends State<DetailScreenPdf> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.machine.machineType),
-        backgroundColor: Colors.purple,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
