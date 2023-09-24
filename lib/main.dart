@@ -29,8 +29,20 @@ class MyApp extends StatelessWidget {
               title: "Project Easy",
               debugShowCheckedModeBanner: false,
               theme: themeNotifier.isDark
-                  ? ThemeData(brightness: Brightness.dark)
-                  : ThemeData(brightness: Brightness.light),
+                  ? ThemeData(
+                    brightness: Brightness.dark, 
+                    useMaterial3: true,
+                    appBarTheme: const AppBarTheme(
+                      backgroundColor: Color.fromARGB(255, 116, 82, 150)
+                    )
+                    )
+                  : ThemeData(
+                      brightness: Brightness.light,
+                      useMaterial3: true,
+                      appBarTheme: const AppBarTheme(
+                        backgroundColor: Color.fromARGB(255, 183, 158, 202)
+                      )
+                    ),
               home: MyHomePage(
                   machines: List.generate(
                       machineCodes.length,

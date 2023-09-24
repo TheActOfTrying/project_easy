@@ -18,7 +18,6 @@ class _PdfScreenState extends State<PdfScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.machineName),
-        backgroundColor: Colors.purple,
       ),
       body: SfPdfViewer.asset(widget.pdfFile
           //"assets/my_document_0.pdf",
