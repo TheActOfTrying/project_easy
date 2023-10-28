@@ -465,12 +465,22 @@ appears on temperature display.""",
       "EU - Feil på kontrollerkort"
     ],
     //"Testmaskin": ["reg0", "reg1", "reg2"]
-    "Regulatorer": ["Carel ir33 manual", "Dixell Emerson XR manual", "Eliwell IDPlus manual"],
-    "Servicemanualer": ["Gram kgf", "Winterhalter UC", "Coffee Queen"]
+    "Regulatorer": [
+      "Carel ir33 manual",
+      "Dixell Emerson XR manual",
+      "Eliwell IDPlus manual"
+    ],
+    "Servicemanualer": ["Gram kgf", "Winterhalter UC", "Coffee Queen"],
+    "Produkt Innlogging": [
+      "Electrolux: 11235813",
+      "Piron: piron118",
+      "Rational: TECLEVEL",
+      "Eurofours: 3210"
+    ]
   };
 }
 
-List <bool> isPdfList() {
+List<bool> isPdfList() {
   return [
     false,
     false,
@@ -479,6 +489,7 @@ List <bool> isPdfList() {
     false,
     true,
     true,
+    false,
   ];
 }
 
