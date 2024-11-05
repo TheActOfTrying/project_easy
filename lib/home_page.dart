@@ -75,7 +75,7 @@ class _HomePageState extends State<MyHomePage> {
             padding: EdgeInsets.all(8),
             child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
               Text(
-                'Version 1.0.9',
+                'Version 1.0.9 Pdfs_Web',
                 style: TextStyle(color: Colors.grey),
               )
             ]),
