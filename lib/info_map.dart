@@ -472,7 +472,9 @@ appears on temperature display.""",
     ],
     "Servicemanualer": ["Gram kgf", "Winterhalter UC", "Coffee Queen"],
     "Produkt Innlogging": [
-      "Electrolux: 11235813",
+      "Electrolux Storkjøkken: 11235813",
+      "Electrolux Laundry Gammel: 9191 eller rød knapp bak på display kort",
+      "Electrolux Laundry Ny: 1111 eller rød knapp bak på display kort",
       "Piron: piron118",
       "Rational: TECLEVEL",
       "Eurofours: 3210"
