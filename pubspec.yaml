@@ -11,12 +11,12 @@ dependencies:
     sdk: flutter
   provider: ^6.0.5
   shared_preferences: ^2.2.0
-  syncfusion_flutter_pdfviewer: ^22.2.10
+  syncfusion_flutter_pdfviewer: ^24.2.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
