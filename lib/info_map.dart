@@ -470,7 +470,10 @@ appears on temperature display.""",
       "Dixell Emerson XR manual",
       "Eliwell IDPlus manual"
     ],
-    "Servicemanualer": ["Gram kgf", "Winterhalter UC", "Coffee Queen"],
+    "Servicemanualer": ["Gram kgf",
+    "Winterhalter UC",
+    "Coffee Queen"
+    ],
     "Produkt Innlogging": [
       "Electrolux Storkjøkken: 11235813",
       "Electrolux Laundry Gammel: 9191 eller rød knapp bak på display kort",
@@ -478,6 +481,40 @@ appears on temperature display.""",
       "Piron: piron118",
       "Rational: TECLEVEL",
       "Eurofours: 3210"
+    ],
+    "Leverlandør Kontakt": [
+      "Electrolux Proff",
+      "Patrick Grøndalen: 47 05 30 17",
+      "Ståle Jacobsen: 41 46 16 06",
+      "Christen Stray: 99 69 88 17",
+      "\n",
+      "Electrolux Home",
+      "Teknisk: 23 05 21 71",
+      "\n",
+      "Colia",
+      "Arild Pedersen: 99 58 08 48",
+      "Rune Johansen: 48 25 73 82",
+      "Sentralbord: 66 98 77 65",
+      "\n",
+      "Bonamat",
+      "Svein Eriksen: 41 49 66 44 / 61 13 09 65",
+      "Pål Stensrud: 41 76 98 44 / 61 13 09 60",
+      "\n",
+      "Granuldisk",
+      "Teknisk: +46 40-685 37 70",
+      "\n",
+      "Classic Gastro",
+      "Dennis Bojsen: +45 65 38 30 73",
+      "Per Maribo: +45 24 40 89 59",
+      "\n",
+      "Fribergs Verkstader",
+      "Teknisk: +46 512-30 00 40",
+      "\n",
+      "Robot Coupe",
+      "Maria Kristiansen: 41 61 87 25",
+      "\n",
+      "Hendi",
+      "Hilde Hunsager: 90 59 10 72"
     ]
   };
 }
@@ -491,6 +528,7 @@ List<bool> isPdfList() {
     false,
     true,
     true,
+    false,
     false,
   ];
 }
